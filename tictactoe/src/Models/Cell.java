@@ -30,4 +30,20 @@ public class Cell {
     public void setState(CellState state) {
         this.state = state;
     }
+
+    public Symbol getSymbol() {
+        return symbol;
+    }
+    public void setSymbol(Symbol symbol) {
+        this.symbol = symbol;
+    }
+
+    public  void displayCell(){
+        if(state == CellState.Empty){
+            System.out.print("| - |");
+        }
+        else{
+            System.out.print("| "+symbol.getSymChar()+ " |");
+        }
+    }
 }
