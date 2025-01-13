@@ -2,8 +2,9 @@ package Models;
 
 public class Slot {
     private int slotNo;
-    private SlotType slotType;
     private SlotStatus slotStatus;
+    private  VehicleType vehicleType;
+    private  Floor floor;
 
     public int getSlotNo() {
         return slotNo;
@@ -11,17 +12,23 @@ public class Slot {
     public void setSlotNo(int slotNo) {
         this.slotNo = slotNo;
     }
-    public SlotType getSlotType() {
-        return slotType;
-    }
-    public void setSlotType(SlotType slotType) {
-        this.slotType = slotType;
-    }
     public SlotStatus getSlotStatus() {
         return slotStatus;
     }
     public void setSlotStatus(SlotStatus slotStatus) {
         this.slotStatus = slotStatus;
+    }
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
+    public void setVehicleType(VehicleType vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+    public Floor getFloor() {
+        return floor;
+    }
+    public void setFloor(Floor floor) {
+        this.floor = floor;
     }
 
 }
